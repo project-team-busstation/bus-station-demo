@@ -141,7 +141,8 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-       Profile profile = new Profile();
+        dispose();
+    	Profile profile = new Profile();
        profile.setVisible(true);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 

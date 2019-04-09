@@ -145,12 +145,14 @@ public class SignIn extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        MainMenu newone = new MainMenu();
+        dispose();
+    	MainMenu newone = new MainMenu();
         newone.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Profile prof = new Profile();
+        dispose();
+    	Profile prof = new Profile();
         prof.setVisible(true);
         
     }//GEN-LAST:event_jButton1ActionPerformed
