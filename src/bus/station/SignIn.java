@@ -5,6 +5,8 @@
  */
 package bus.station;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Lenovo ideapad
@@ -17,6 +19,7 @@ public class SignIn extends javax.swing.JFrame {
     public SignIn() {
         initComponents();
     }
+    ClientLogic logic;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -151,9 +154,20 @@ public class SignIn extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dispose();
+        String username = jTextField1.getText();
+        String pin = jPasswordField1.getText();
+        ArrayList<String> users = new ArrayList<String>();
+        users.add("Mirna");
+
+    	try {
+    		for (int i = 0; i < users.size(); i++) {
+        	if(users.get(i).contains(username)) {
+    	dispose();
     	Profile prof = new Profile();
-        prof.setVisible(true);
+        prof.setVisible(true);}}}
+        catch(Exception e) {
+            //error.setText("warning!!");
+        }
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
