@@ -157,7 +157,7 @@ public class employeeprof extends javax.swing.JFrame {
               
     	dispose();
     	empProf Drivers = new empProf();
-        Drivers.setName(driver); //CHECK THIS LINE 
+        Drivers.setDriver(driver); 
         
         Drivers.setVisible(true);}
                 else    error.setText("incorrect Username or Password");
@@ -213,4 +213,5 @@ public class employeeprof extends javax.swing.JFrame {
     private javax.swing.JTextField nameField;
     private javax.swing.JPasswordField psField;
     // End of variables declaration//GEN-END:variables
-}
+} 
+
